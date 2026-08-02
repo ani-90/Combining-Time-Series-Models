@@ -102,7 +102,6 @@ The correlation structure inside both indices is strong enough that several cons
 
 ## Known limitations
 
-- **Not reproducible as committed.** Absolute Colab paths and missing CSVs mean the notebooks won't run end-to-end without setup. Fixing this is the first item on the roadmap.
 - **Short evaluation window.** 20 trading days of a single month is too small to separate genuine improvement from luck. A rolling-origin evaluation across multiple months is the honest test.
 - **Weights are fitted on the evaluation period.** Both schemes select weights using December actuals and are then assessed on December — so the reported improvement is in-sample for the combination step and optimistic. A separate validation split for weight fitting is needed.
 - **Random search is shallow.** 100 samples over a 6-simplex; convex optimisation would find the true optimum directly.
